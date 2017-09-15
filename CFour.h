@@ -8,6 +8,11 @@
 
 #include "CThree.h"
 
+/**
+ * @brief Класс содержит переменную float, наследуется от CThree
+ * @param f
+ */
+
 class CFour : public CThree{
 protected:
     float f;
