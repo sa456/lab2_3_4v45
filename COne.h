@@ -4,7 +4,6 @@
 
 #ifndef LAB2_3_4_CONE_H
 #define LAB2_3_4_CONE_H
-
 #include <string>
 
 /**
@@ -18,7 +17,7 @@ private:
     long l;
     std::string s;
 public:
-    ~COne();
+    virtual ~COne();
     COne();
     COne(COne &obj);
     COne(long lIn, std::string);

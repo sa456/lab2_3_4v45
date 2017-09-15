@@ -15,7 +15,7 @@ CTwo::CTwo(){
 /**
  * Деструктор по умолчанию, очистка памяти
  */
-CTwo::~CTwo(){
+virtual CTwo::~CTwo(){
     delete(p);
 }
 

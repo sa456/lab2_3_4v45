@@ -17,7 +17,7 @@ private:
     double d;
 public:
     CTwo();
-    ~CTwo();
+    virtual ~CTwo();
     CTwo(COne *obj, double dIn);
     CTwo(CTwo &obj);
 

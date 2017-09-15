@@ -4,13 +4,10 @@
 
 #include "COne.h"
 
-#include <utility>
-#include <iostream>
-
 /**
  * Конструктор по умолчанию
  */
-COne::~COne() = default;
+virtual COne::~COne() = default;
 
 /**
  * Деструктор по умолчанию
