@@ -4,10 +4,10 @@
 #include "CThree.h"
 #include "CFour.h"
 
-void printAll(CTwo *array, int n){
+void printAll(CTwo **array, int n){
     std::cout<<"Array: \n";
     for (int i = 0; i < n; ++i) {
-        array[i].print();
+        array[i]->print();
     }
 }
 
@@ -79,7 +79,8 @@ int main() {
     CFour cFour1(cFour);
     cFour1.print();
 
-    CTwo array[3] = {cTwo, cThree, cFour};
+    CTwo* array[3] = {&cTwo, &cThree, &cFour};
+
     printAll(array, 3);
     return 0;
 }

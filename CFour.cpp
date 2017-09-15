@@ -5,14 +5,29 @@
 #include <iostream>
 #include "CFour.h"
 
+/**
+ * Деструктор по умолчанию
+ */
 CFour::~CFour() = default;
 
+/**
+ * КОнутруктор по умолчанию
+ */
 CFour::CFour() = default;
 
+/**
+ * Конструктор с параметрами
+ * @param fIn входное float
+ * @param obj входное СThree
+ */
 CFour::CFour(float fIn, CThree &obj) : CThree(obj) {
     f = fIn;
 }
 
+/**
+ * Конструктор копирования
+ * @param obj взодное CFour
+ */
 CFour::CFour(CFour &obj) {
     f = obj.getF();
     setName(obj.getName());
@@ -20,15 +35,26 @@ CFour::CFour(CFour &obj) {
     setP(obj.getP());
 }
 
+/**
+ * setter
+ * @param fIn
+ */
 void CFour::setF(float fIn) {
     f = fIn;
 }
 
+/**
+ * getter
+ * @return f
+ */
 float CFour::getF() {
     return f;
 }
 
-virtual void CFour::print() {
+/**
+ * Вывод в консоль
+ */
+void CFour::print() {
     std::cout << "f = " << f << "\n";
     CThree::print();
 }
