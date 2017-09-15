@@ -2,12 +2,13 @@
 // Created by rei on 14.09.2017.
 //
 
+#include <iostream>
 #include "COne.h"
 
 /**
  * Конструктор по умолчанию
  */
-virtual COne::~COne() = default;
+COne::~COne() = default;
 
 /**
  * Деструктор по умолчанию
