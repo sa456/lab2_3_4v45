@@ -1,6 +1,7 @@
 #include <iostream>
 #include "COne.h"
 #include "CTwo.h"
+#include "CThree.h"
 
 int main() {
     std::cout << "\t\tCOne class tests\nInput with methods COne" << std::endl;
@@ -43,6 +44,16 @@ int main() {
     std::cout << "Constructor with copy" << std::endl;
     CTwo cTwo1(cTwo);
     cTwo1.print();
+
+    std::cout << "\n\t\t CThree class tests\nInput with methods CTwo" << std::endl;
+    std::string name;
+    std::cin >> name;
+    CThree cThree(name, cTwo1);
+    cThree.print();
+
+    std::cout << "Constructor with copy" << std::endl;
+    CThree cThree1(cThree);
+    cThree1.print();
 
     return 0;
 }

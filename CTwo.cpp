@@ -66,8 +66,8 @@ void CTwo::print() {
  * getter
  * @return *p
  */
-COne CTwo::getP() {
-    return *p;
+COne * CTwo::getP() {
+    return p;
 }
 
 /**

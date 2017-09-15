@@ -23,10 +23,10 @@ public:
 
     double getD();
     void setD(double dIn);
-    COne getP();
+    COne * getP();
     void setP(COne *pIn);
 
-    void print();
+    virtual void print();
 };
 
 
