@@ -1,6 +1,7 @@
 #include <iostream>
 #include "COne.h"
-#include "cmake-build-debug/CTwo.h"
+#include "CTwo.h"
+#include "CTwo.h"
 
 int main() {
     std::cout << "\t\tCOne class tests\nInput with methods COne" << std::endl;
